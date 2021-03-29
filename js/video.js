@@ -30,7 +30,7 @@ document.querySelector("#faster").addEventListener("click", function() {
 
 // skip ahead - need to go back to beginning if exceed time of video. If/else?
 document.querySelector("#skip").addEventListener("click", function() { 
-	video.currentTime += 15;
+	video.currentTime(video.currentTime + 15);
 	console.log("Location is "+video.currentTime );
 	video.loop = true;
 	video.play();
